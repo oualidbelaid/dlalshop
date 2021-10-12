@@ -74,7 +74,7 @@ header .continaire.logo{
     height: 100%;
 }
 header .continaire .logo .dl_l_shop {
-    font-size: 45px;
+    font-size: 40px;
     font-family: "bauh";
     color: var(--color-main);
     text-transform: uppercase;
@@ -83,7 +83,7 @@ header .continaire .logo .dl_l_shop {
     text-shadow: 0px 6px 5.46px rgba(20, 21, 21, 0.54); 
 }
 header .continaire .logo .a {
-    font-size: 20px; 
+    font-size: 19px; 
     text-transform: uppercase;
     vertical-align: super;  
     color: var(--color-2);  
