@@ -310,10 +310,8 @@ header .continaire .profile{
     align-items: center;
 }
 .artcl_main .continaire .list_artcl article{
-    min-width: 380px;
-    min-height: 300px;
-    max-width: 380px;
-    max-height: 300px;
+    width: 380px;
+    height: 300px; 
     margin: 5px;
     background-color: #cfcfcd;
     box-shadow: 0 0 8px #949494;
