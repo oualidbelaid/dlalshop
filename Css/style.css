@@ -14,6 +14,14 @@ body{
     --color-2:#1e4452;
     --padding-main:20px;
 }
+/*ecrit*/
+@font-face {
+    font-family: "bauh";
+    src: url("../ecrit/BAUHS93.ttf");
+} 
+    
+
+
 /*BIG SECREEN*/
 @media (min-width:1200px) {
     
@@ -67,7 +75,7 @@ header .continaire.logo{
 }
 header .continaire .logo .dl_l_shop {
     font-size: 45px;
-    font-family: "Bauhaus 93";
+    font-family: "bauh";
     color: var(--color-main);
     text-transform: uppercase;
     vertical-align: super; 
@@ -302,8 +310,10 @@ header .continaire .profile{
     align-items: center;
 }
 .artcl_main .continaire .list_artcl article{
-    width: 380px;
-    height: 300px; 
+    min-width: 380px;
+    min-height: 300px;
+    max-width: 380px;
+    max-height: 300px;
     margin: 5px;
     background-color: #cfcfcd;
     box-shadow: 0 0 8px #949494;
