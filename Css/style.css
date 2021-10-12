@@ -8,12 +8,13 @@ body{
     margin: 0;
     text-transform: capitalize; 
 }
- 
+
 :root{
     --color-main:#2b5fd2;
     --color-2:#1e4452;
     --padding-main:20px;
 }
+
 /*ecrit*/
 @font-face {
     font-family: "bauh";
@@ -75,7 +76,7 @@ header .continaire.logo{
 }
 header .continaire .logo .dl_l_shop {
     font-size: 40px;
-    font-family: "bauh";
+    font-family: "bauh",sans-serif;
     color: var(--color-main);
     text-transform: uppercase;
     vertical-align: super; 
@@ -100,22 +101,34 @@ header .continaire .profile{
     align-items: center;
 }
 /*icon to the profiel globale*/
-.prfl{
+header .continaire .profile .prfl{
     width: 45px;
     height: 45px; 
     border-radius: 100%;  
-    border: 3px solid var(--color-main);
+    border-radius: 100%;
+    border: 2px solid #8b8b8b;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-.prfl i{
+header .continaire .profile .prfl::after{
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color:rgb(4, 173, 41);
+    border-radius: 100%;
+    position: absolute;
+    top: -3px;
+    left: -4px;
+}
+header .continaire .profile .prfl i{
     font-size: 26.5px;
     color: #8b8b8b;
     display: none;
 }
-.prfl img{
+header .continaire .profile .prfl img{
     width: 100%;
     height: 100%;
     border-radius: 100%;
@@ -335,18 +348,24 @@ header .continaire .profile{
 }
 .artcl_main .continaire .list_artcl article .compt .prfl{
     border: none;
+    border-radius: 10px;
     overflow: hidden;
     width: 45px;
     height: 45px;
     background-color: #54a1b1;
+    position: relative;
 }
 .artcl_main .continaire .list_artcl article .compt .prfl i{
-    display: none;
-    
+    font-size: 15px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: var(--color-main);
 }
 .artcl_main .continaire .list_artcl article .compt .prfl img{
     width: 45px;
     height: 45px;
+    border-radius: 100%;
 }
 .artcl_main .continaire .list_artcl article .compt .desc{
     color: var(--color-2);
