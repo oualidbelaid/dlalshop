@@ -367,7 +367,7 @@ header .continaire .profile .prfl img{
     width: 45px;
     height: 45px;
     border-radius: 100%;
-    background-color: var(--color-main);
+    background-color: #5c5c5c;
 }
 .artcl_main .continaire .list_artcl article .compt .desc{
     color: var(--color-2);
