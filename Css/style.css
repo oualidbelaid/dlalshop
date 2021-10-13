@@ -20,7 +20,10 @@ body{
     font-family: "bauh";
     src: url("../ecrit/BAUHS93.ttf");
 } 
-    
+@font-face {
+    font-family: "recursive";
+    src: url(/ecrit/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+}
 
 
 /*BIG SECREEN*/
@@ -383,12 +386,12 @@ header .continaire .profile .prfl img{
 .artcl_main .continaire .list_artcl article .compt .prfl .etape .name_usr{
     font-size: 14px;
     font-family: monospace;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--color-2);
 }
 .artcl_main .continaire .list_artcl article .compt .prfl .etape .date_p{
     font-size: 10px;
-    font-family: cursive;
+    font-family:"recursive" ;
     font-weight: 600;
     letter-spacing: -0.2px;
     color: #424141;
@@ -401,7 +404,7 @@ header .continaire .profile .prfl img{
     letter-spacing: 0.5px;
     margin-left: 5px;
     font-family: monospace;
-    text-shadow: 0 0 0px var(--color-2);  
+    text-shadow: 0 0 0.5px var(--color-2);  
     padding-left: 5px;
     cursor: pointer;
     text-align: center;
