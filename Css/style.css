@@ -60,12 +60,15 @@ body{
 header{
     width: 100%;
     background-color: #d2d2d2;
-    height: 73px;
+    height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: var(--padding-main);
     padding-right: var(--padding-main); 
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 }
 header .continaire{
     display: flex;
@@ -139,12 +142,15 @@ header .continaire .profile .prfl img{
 }
 /*start main navigateur*/
 .nav_main{
-    height: 55px;
+    height: 47px;
     width: 100%;
     padding-left:var(--padding-main) ;
     padding-right: var(--padding-main); 
     background-color: #8b8b8b; 
-    position: relative; 
+    position: fixed; 
+    top: 65px;
+    position: fixed; 
+    z-index: 1000; 
 }
 .nav_main .icon{
     height: 100%;
@@ -158,6 +164,16 @@ header .continaire .profile .prfl img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (min-width:700px) {
+    .nav_main .icon ul{
+        justify-content: space-around;
+    }
+}
+@media (min-width:1000px) {
+    .nav_main .icon ul{
+        justify-content: space-evenly;
+    }
 }
 .nav_main .icon ul li{ 
     padding: 0;
@@ -196,6 +212,7 @@ header .continaire .profile .prfl img{
     justify-content: center;
     align-items: center;
 }
+
 .nav_main .menu ul li{
     min-width: 250px;
     height: 50px;
@@ -205,6 +222,10 @@ header .continaire .profile .prfl img{
 }
 /*end main navigateur*/
 
+/*homme*/
+#home{
+    margin-top: 112px;
+}
 /*start story shop*/
 .story{ 
     width: 100%;
@@ -233,8 +254,10 @@ header .continaire .profile .prfl img{
     background-color: var(--color-main); 
 }
 .story .continaire .list_story{
-    width: 1200px;
+    min-width: 100%;
+    width: auto;
     height: 100%; 
+    
 }
 .story .continaire .list_story ul{
     height: 100%;
@@ -242,6 +265,7 @@ header .continaire .profile .prfl img{
     justify-content: flex-start;
     align-items: center;
 }
+
 .story .continaire .list_story ul li{
     width: 70px;
     height: 70px;
@@ -253,7 +277,9 @@ header .continaire .profile .prfl img{
     align-items: center; 
     position: relative;
 }
-
+.story .continaire .list_story ul li:last-child{
+    margin-right:10px ;
+}
 .story .continaire .list_story ul li img{
     width: 70px;
     height: 70px;
@@ -284,7 +310,7 @@ header .continaire .profile .prfl img{
 /*start main publication*/
 .pub_main{
     width: 100%;
-    height: 300px;
+    height: 200px;
     background-color:#e2e4e4 ;
     padding: 10px;
     padding-left: var(--padding-main);
@@ -317,6 +343,7 @@ header .continaire .profile .prfl img{
     padding-right: var(--padding-main);
     background-color:#e2e4e4 ;
 }
+
 .artcl_main .continaire{ 
     border: none
 }
@@ -328,8 +355,7 @@ header .continaire .profile .prfl img{
 }
 .artcl_main .continaire .list_artcl article{
     width: 380px;
-    height: 300px; 
-    margin: 5px;
+    height: 300px;  
     background-color: #cfcfcd;
     box-shadow: 0 0 8px #949494;
     margin: 5px;
@@ -340,6 +366,16 @@ header .continaire .profile .prfl img{
     align-content: space-between;
     overflow: hidden;
     position: relative;
+    
+}
+@media (max-width:500px) {
+    .artcl_main{
+        padding: 0px;
+    }
+    .artcl_main .continaire .list_artcl article{
+        margin: 0px;
+        margin-top: 10px;
+    }
 }
 .artcl_main .continaire .list_artcl article .compt{
     width: 100%;
@@ -412,6 +448,14 @@ header .continaire .profile .prfl img{
 .artcl_main .continaire .list_artcl article .compt .desc:hover{
     color: var(--color-2);
     
+}
+.artcl_main .continaire .list_artcl article .imge{
+    width: 100%;
+    height: 100%;
+}
+.artcl_main .continaire .list_artcl article .imge img{
+    width: 380px;
+    height: 300px;
 }
 .artcl_main .continaire article .detail{
     width: 100%;
